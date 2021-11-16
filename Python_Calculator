@@ -1,0 +1,69 @@
+def display_menu():
+
+    print("------------CALCULATOR---------------")
+    print("Please select 1 to multiply")
+    print(" select 2 for for by the power")
+    print("select 3 to divide")
+    print(" select 4 to quare root")
+    print("select 5 to get remainder")
+    print(" select 6 to add")
+    print("select 7 to subtract")
+    print("Select 8 to turn calculator off")
+    print("-------------------------------------")
+
+
+def main():
+    choice = 0
+    while choice != 8:
+        display_menu()
+
+        choice = input("Please enter your choice of 1 through 7 or 8 to turn Calculator off:")
+
+        if choice == 1:
+            print("You have chosen Multiply")
+            num1 = int(input("Please enter the first number to multiply with:"))
+            num2 = int(input("PLease enter the second number to use:"))
+            print(num1*num2)
+
+        elif choice == 2:
+            print("You have chosen power rule")
+            num1 = int(input("Please enter the first number to use:"))
+            num2 = int(input("Please enter the power:"))
+            print(num1**num2)
+
+        elif choice == 3:
+            print("You have chosen divide")
+            num1 = int(input("Please enter the first number to use:"))
+            num2 = int(input("Please enter the second number to use:"))
+            print(num1/num2)
+
+        elif choice == 4:
+            print("You have chosen Square root")
+            num1 = int(input("Please enter the first number to use:"))
+            num2 = int(input("Please enter the second number to use:"))
+            print(num1//num2)
+
+        elif choice == 5:
+            print("You have chosen to find the remainder")
+            num1 = int(input("Please enter the first number to use:"))
+            num2 = int(input("Please enter the second number to use:"))
+            print(num1%num2)
+
+        elif choice == 6:
+            print("You have chosen Add")
+            num1 = int(input("Please enter the first number to use:"))
+            num2 = int(input("Please enter the second number to use:"))
+            print(num1+num2)
+
+        elif choice == 7:
+            print("You have chosen Subtract")
+            num1 = int(input("Please enter the first number to use:"))
+            num2 = int(input("Please enter the second number to use:"))
+            print(num1-num2)
+
+        elif choice == 8:
+            print("Thank you, Good bye!")
+
+        else:
+            print("Invalivd Selection: Please try again.")
+main()
